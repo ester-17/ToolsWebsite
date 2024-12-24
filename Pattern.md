@@ -36,6 +36,7 @@ git init -> creates a new and empty repository based on your current folder
 git add . -> adds all the files and folders to the stage area
 git add name-of-the-file/folder -> adds the specific file/folder to the stage area
 git commit -m "message you want to appear with your commit" -> sends all the files/folders that were on the stage area to the actual git repository
-git push -u origin name-of-your-branch -> sends all the commited files/folders to the GitHub repository at the wanted branch (main, other-one)
+git push -u origin name-of-your-branch -> sends all the committed files/folders to the GitHub repository at the wanted branch (main, other-one)
 
-
+#  Architectural Pattern to be used
+- Layered Architecture with MVC & Event-Driven Components
