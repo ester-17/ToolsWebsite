@@ -1,0 +1,315 @@
+body{
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+button{
+  margin: auto;
+  align-items: center;
+  background-color: hsl(201, 96%, 47%);
+  border-radius: 5px;
+  font-size:  inherit;
+  cursor: pointer;
+}
+button:hover{
+  background-color: hsl(201, 96%, 37%);
+}
+button:active{
+  margin: auto;
+  background-color: hsl(201, 96%, 50%);
+  border-radius: 5px;
+}
+
+/*=========== FERRAMENTAS===========*/
+#tools{
+  background-color: hsl(201, 96%, 47%);
+}
+#tools:hover{
+  background-color: hsl(201, 96%, 37%);
+
+}
+#tools:active{
+  background-color: hsl(201, 96%, 50%);
+}
+
+/*=========== PAQUIMETRO ===========*/
+#paquimetro{
+  display: none;
+  
+}
+#liberarPaquimetro{
+  display: none;
+  margin:none;
+  
+}
+#tempoPaquimetro{
+  display: none;
+}
+#fecharPaquimetro{
+  display: none;
+ /* margin-left: 0px;
+  margin-right: 0px;*/
+}
+/*=========== MISMATCH ===========*/
+#mismatch{
+  display:none;
+}
+#liberarMismatch{
+  display: none;
+}
+#fecharMismatch{
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+#tempoMismatch{
+  display: none;
+}
+/*=========== CENTRALIZADOR ===========*/
+#centralizador{
+  display:none;
+}
+#liberarCentralizador{
+  display: none;
+}
+#fecharCentralizador{
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+#tempoCentralizador{
+  display: none;
+}
+
+#login{
+  background-color: #f3f3f3;
+}
+
+.hidden{
+  display: none;
+  /*background-color: hsl(201, 97%, 77%);*/
+}
+.button-container {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+}
+.login{
+  text-align: center;
+}
+.containerFerramentas {
+  height: 100vh;
+  display: flex;
+  /*background-color: #999;*/
+  background-color: #f0f;
+  
+}
+
+/*================ MENU ================*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#menu{
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*li a:hover:not(.active) {
+  background-color: #111;
+}*/
+li a:hover{
+    background-color: #04AA6D;
+}
+li a:active{
+    background-color:#000;
+}
+.active {
+  background-color: #04AA6D;
+}
+
+/*===============Página de Login/*===============*/
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #6C7A89;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 350px;
+  height: 450px;
+  background: #fff;
+  border-radius: 20px;
+}
+.inputSpace{
+  width: 200px;
+  height: 30px;
+}
+.enviarBtn{
+  border: none;
+  border-radius: 10px;;
+  height: 40px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color:#FFF;
+  background-color: #090a0a;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+/*===============Escolha da ferramenta==============*/
+.right-section {
+  /*padding: 50px;*/
+  float:right;
+  text-align: center;
+  background-color: #999;
+  width: 50%;
+}
+.painelO{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /*background-color: #333;*/
+  /*padding: 50px;*/
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-top: 10px; 
+}
+
+.left-section {
+  float:left;
+  padding: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  width: 50%;
+}
+.painelF{
+  /*text-align: center;*/
+  justify-content: center;
+  /*align-items: center;*/
+/*  background-color: #333;*/
+  padding: 50px;
+}
+
+/*======STATUS DA FERRAMENTA========*/
+.statusdasFerramentas{
+  margin: 70px;  /*orientação na vertical*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+.statusFerramentas{
+  border-radius: 15px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #047bbb;
+  /*width: 400px;
+  height: 300px;*/
+  padding: 15px;/*
+  justify-content: center;
+  align-items:  center;*/
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-top: 10px;  
+}
+.statusPaquimetro{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  /*text-align: center;*/
+  display: flex;
+}
+/*======STATUS DA TRAVA========*/
+.Aberta{
+  display: none;
+  color: hsl(0, 100%, 70%);
+}
+.Fechada{
+  display: block;
+}
+
+/*=======AVISOS=======*/
+.statusdosAvisos{
+  margin: 10px;  /*orientação na vertical*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+.statusAvisos{
+  font-family: 'Roboto', sans-serif;
+  border-radius: 15px;
+  background-color: green;
+  margin-right: 80px;
+  margin-left: 80px;
+  padding: 15px;
+  margin-top: 10px;
+}
+.Avisos{
+  display: none;
+}
+/*======STATUS DO USUÁRIO========*/
+.statusdosOperadores{
+  margin: 70px;  
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  
+}
+.statusOperadores{
+  border-radius: 15px;
+  font-family: 'Roboto', sans-serif;
+  background-color: gray;
+  margin-right: 80px;
+  margin-left: 80px;
+  height: 245px;
+  padding: 5px;
+  margin-top: 10px;
+}
+/*============================ FRASES =================================*/
+
+#paqPresente{
+  display: block;
+}
+#misPresente{
+  display: block;
+}
+#cenPresente{
+  display: block;
+}
+#paqAusente{
+  display: none;
+  color: hsl(0, 100%, 70%);
+}
+#misAusente{
+  display: none;
+  color: hsl(0, 100%, 70%);
+}
+#cenAusente{
+  display: none;
+  color: hsl(0, 100%, 70%);
+}
+
+/*============================ BOTÕES =================================*/
+
+
+
+/*
+- Mudar a cor dos paineis da ferramenta, travas e usuários de acordo com os acontecimentos (fechar a trava)
+- Avisos, erros, etc no campo de travas

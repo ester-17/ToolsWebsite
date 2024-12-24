@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!--========CSS===========-->
+    <link rel="stylesheet" href="ExCompleto.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="login">
+                <p><h3 style="color: hsl(201, 96%, 40%);">Login</h3></p>
+                <!--COLOCAR O FORM DENTRO DE UMA DIV CHAMADA LOGIN, P/ ELA FICAR CENTRALIZADA NA TELA-->
+                <form id="registrationForm">
+                    <label for="nome">Nome:</label><br>
+                    <input style="border: 1px solid #aaa; border-radius: 5px; height: 25px; padding-left: 10px;" type="text" id="nome" name="nome" required><br>
+                    <label for="matricula">Matrícula:</label><br>
+                    <input style="border: 1px solid #aaa; border-radius: 5px; height: 25px; padding-left: 10px;" type="matricula" id="matricula" name="matricula" required><br>
+                    <!--<label for="password">Part Number:</label><br>
+                    <input  id="password" name="password" required><br><br>-->
+                    <br>
+                    <button id="enviar" type="submit" style="border:none; color:white; width: 90px; height: 35px;" >Enviar</button><br><br>                  
+                    <a href="EFO.html" target="_self">Escolher Ferramenta O</a><br><br>
+                    <a href="EFTL.html" target="_self">Escolher Ferramenta TL</a><br><br>
+                    <a href="EFM.html" target="_self">Escolher Ferramenta M</a><br><br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const matricula = document.getElementById("matricula").value;
+/*
+        const nomesOperadores = ["flavio", "stefani"];
+        const nomesTL = ["valdir", "camilo"];
+        const nomesM = ["ester", "alguem"];
+        const matriculasPermitidas = ["12345", "23456", "34567",  "45678"];
+*/
+        const nomesOperadores = 
+        [
+        { nome: 'flavio', matricula: '12345' },
+        { nome: 'stefani', matricula: '23456' },
+        // Add more users here
+        ];
+        const nomesTL = [
+            {nome: 'valdir', matricula: '34567'},
+            {nome: 'camilo', matricula: '45678'},
+        ];
+        const nomesM = [
+            {nome: 'ester', matricula: '56789'},
+            {nome: 'alguem', matricula: '67890'},
+        ];
+
+        
+        //talves devesse estar dentro da function, mudar name pra nome, apagar cont nome lá do começo
+        
+
+        let count = 0;
+
+        document.getElementById("registrationForm").addEventListener("submit", function (event) 
+        {
+            event.preventDefault(); //impede que o form seja enviado normalmente
+            // Get input values
+            const nome = document.getElementById("nome").value.toLowerCase();
+            const matricula = document.getElementById("matricula").value;
+            // VÊ SE DIGITOU ALGO
+            //posso tirar, pq se n tem nada, significa que não é compatível com a lista de nomes
+            
+            //SE NOME NÃO FOR REGISTRADO        
+            // SE MATRÍCULA POSSUI MENOS DE 5 CARACTERES CONSIDERA INVÁLIDA
+
+            if (matricula.length != 5) 
+            {
+                alert("Matrícula inválida, digite novamente por favor.");
+                return;
+            }
+            const userOperador = nomesOperadores.find
+            (
+                (userOperador) => userOperador.nome === nome && userOperador.matricula === matricula
+            );
+            const userTL = nomesTL.find
+            (
+                (userTL) => userTL.nome === nome && userTL.matricula === matricula
+            );
+            const userM = nomesM.find
+            (
+                (userM) => userM.nome === nome && userM.matricula === matricula
+            );
+
+            if (userOperador)
+            {
+            // Redirect to the second page
+            window.location.href = 'EFO.html';
+            }            
+            else if (userTL)
+            {
+            // Redirect to the second page
+            window.location.href = 'EFTL.html';
+            }
+            else if (userM)
+            {
+            // Redirect to the second page
+            window.location.href = 'EFM.html';
+            } 
+            else
+            {
+            alert('Nome ou senha inválidos. Digite novamente.');
+            }
+        });
+
+        /*
+        SE NA PAGINA DE LOGIN A PESSOA FOR UMA PESSOA "ESPECIAL", UMA VARIÁVEL EM JS SERÁ ATIVADA E QUANDO ELA FOR PRA PÁGINA DE ESCOLHA DE FERRAMENTA, DEPENDENDO DESSA VARÁVEL, BOTÕES PARA ACÕES ESPECÍFICAS APARECERAM; ex: ABRIR TODAS TRAVAS, VER REGISTRO, 
+        */
+  
+    </script>
+    <!--
+        <a href="Exemplo Completo.html" target="_self">Escolher Ferramenta</a>
+        OU
+        addEventListener("click", function ()
+        {
+            abrir documento;
+        })
+    -->
+</body>
+</html>

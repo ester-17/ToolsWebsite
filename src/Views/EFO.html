@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!------------------CSS------------------->
+  <link rel="stylesheet" href="ExCompleto.css">
+
+
+  <!-------------HTML------------->
+
+  <title>Liberação da Ferramenta-SW</title>
+</head>
+<body>
+ 
+
+
+  <div class="containerFerramentas">
+    <div class="left-section">
+      <div class="painelF">
+        <h1>Painel de Ferramentas</h1>
+        <button id="tools" class="button" style="width: 150px; height: 50px">Escolher Ferramenta</button>
+
+
+        <p id="tools"></p><br><br>
+        <div class=>
+          <button id="paquimetro" class="hidden" style="background-color: hsl(201, 97%, 77%)">Paquimetro</button><br>
+          <div class="button-container">
+            <button id="liberarPaquimetro" class="hidden" style="background-color: hsl(201, 97%, 77%)">Liberar</button>
+            <button id="fecharPaquimetro" class="hidden" style="background-color: hsl(201, 97%, 77%)">Fechar</button>
+          </div><br>
+          <div id="textoContagemPaquimetro" class="hidden"></div><br>
+
+          <button id="mismatch" class="hidden"style="background-color: hsl(201, 97%, 77%)">Mismatch</button><br>
+          <div class="button-container">
+            <button id="liberarMismatch" class="hidden" style="background-color: hsl(201, 97%, 77%)">Liberar</button>
+            <button id="fecharMismatch" class="hidden" style="background-color: hsl(201, 97%, 77%)">Fechar</button><br>
+          </div>
+          <div id="textoContagemMismatch" class="hidden"></div><br>
+          <!--<button id="fecharMismatch">Fechar</button><br>-->
+
+          <button id="centralizador"class="hidden" style="background-color: hsl(201, 97%, 77%)">Centralizador</button><br>
+          <div class="button-container">
+            <button id="liberarCentralizador" class="hidden" style="background-color: hsl(201, 97%, 77%)">Liberar</button><br>
+            <button id="fecharCentralizador" class="hidden" style="background-color: hsl(201, 97%, 77%)">Fechar</button><br>
+          </div>
+        </div><br>
+        <p id="textoContagemCentralizador"></p>
+        <!--<button id="fecharCentralizador">Fechar</button><br>-->
+        <a href="Login.html" target="_self">
+          <button id="login">Login</button>
+        </a><br><br><br>
+        
+       
+      </div>
+      <button onclick="changeToGreen()" id="sensorPaquimetro">Sensor Paquimetro</button>
+      <button id="sensorMismatch">Sensor Mismatch</button>
+      <button id="sensorCentralizador">Sensor Centralizador</button>
+         
+    </div>
+    <div class="right-section">
+      <div class="painelO">
+        <div class="statusFerramentas">
+          <h1 style="color: white">
+            Status da Ferramenta
+          </h1>
+          <div class="statusdasFerramentas">
+            <ul style="color: white" id="ulFerramenta">
+              <li>Paquimetro:&nbsp;</li>
+              <li id="paqPresente" class="Presente">Presente.</li>
+              <li id="paqAusente" class="Ausente">Ausente.</li><br>
+              <li>Mismatch:&nbsp;</li>
+              <li id="misPresente" class="Presente">Presente.</li>
+              <li id="misAusente" class="Ausente">Ausente.</li><br>
+              <li>Centralizador:&nbsp;</li>
+              <li id="cenPresente" class="Presente">Presente.</li>
+              <li id="cenAusente" class="Ausente">Ausente.</li><br>
+            </ul>
+          </div>
+        </div>
+        <div id = "avisoCor" class="statusAvisos">
+          <h1 style="color: white">
+            Avisos
+          </h1>
+          <div class="statusdosAvisos">
+            <ul style="color: white">
+              <li>Paquimetro:&nbsp;</li>
+              <li id="paqAberta" class="Aberta">Trava aberta.</li>
+              <li id="paqFechada" class="Fechada">Trava fechada.</li><br>
+              <li>Mismatch:&nbsp;</li>
+              <li id="misAberta" class="Aberta">Trava aberta.</li>
+              <li id="misFechada" class="Fechada">Trava fechada.</li><br>
+              <li>Centralizador:&nbsp;</li>
+              <li id="cenAberta" class="Aberta">Trava aberta.</li>
+              <li id="cenFechada" class="Fechada">Trava fechada.</li><br>
+            </ul><br>
+            <!--====== Avisos Reais ======-->
+            <ul style="color: white">
+              <li id="paqCuidadoF" class="Avisos">Cuidado! A trava do Paquimetro vai fechar.</li> <!-- PAQUIMETRO VAI FECHAR -->
+              <li id="misCuidadoF" class="Avisos">Cuidado! A trava do Mismatch vai fechar.</li><!-- MISMATCH VAI FECHAR -->
+              <li id="cenCuidadoF" class="Avisos">Cuidado! A trava do Centralizador vai fechar.</li><!-- CENTRALIZADOR VAI FECHAR -->
+              <li id="paqRetirado" class="Avisos">O Paquimetro foi retirado.</li><!-- PAQUIMETRO RETIRADO -->
+              <li id="misRetirado" class="Avisos">O Mismatch foi retirado.</li><!-- MISMATCH RETIRADO -->
+              <li id="cenRetirado" class="Avisos">O Centralizador foi retirado.</li><!-- CENTRALIZADOR RETIRADO -->
+              <li id="paqDevolvido" class="Avisos">O Paquimetro foi devolvido.</li><!-- PAQUIMETRO DEVOLVIDO -->
+              <li id="misDevolvido" class="Avisos">O Mismatch foi devolvido.</li><!-- MISMATCH DEVOLVIDO -->
+              <li id="cenDevolvido" class="Avisos">O Centralizador foi devolvido.</li><!-- CENTRALIZADOR DEVOLVIDO -->
+            </ul><br>
+          </div>
+        </div>
+        <div class="statusOperadores">
+          <h1 style="color: white">
+            Status dos Operadores
+          </h1>
+          <div class="statusdosOperadores">
+            <p style="color: white">
+              Flávio:<br>
+              Stefani:<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!---------JAVASCRIPT--------->
+  <script src="ExComp.js"></script>
+</body>
+</html>
+<!-- &nbsp;-->
+
+<!--COLOCAR DETAILS PARA VER O STATUS DOS OPERADORES-->
