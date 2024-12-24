@@ -1,42 +1,6 @@
-# File structure
+# About this project
+This project was created based on the need to control the use of some tools, so this website is used to send commands to an arduino shield, that controls the sensors and motors.
 
-Menu
-Operador
-  Login
-Team Leader
-  Login
-    Escolher Ferramenta
-    Outro(descrever)
-Manutenção
-  Login
-    Escolher Ferramenta
-    Outro(descrever)
-
-
-
-# Project Pattern
-
-Padrão do projeto, sempre escreveremos os recursos com os seguites padrões
-
-Ex: minha variavel
-
-1. Recurso de rotas ($_GET) em PT kebab-case: minha-variavel
-2. Pastas e Arquivos do src em EN PascalCase: MyVariable
-3. Variaveis e Funções em EN camelCase: myVariable
-4. Banco de Dados em PT snake_case: minha_variavel
-
-os recursos: pagina, acao, id.
-
---------------------------------------------
-
-git branch -M main -> changes the branch name from (master) to (main)
-git checkout name-of-the-branch-you-wanna-go -> changes to the branch you want to go to
-git status -> shows the status of the files and folders on your current directory
-git init -> creates a new and empty repository based on your current folder
-git add . -> adds all the files and folders to the stage area
-git add name-of-the-file/folder -> adds the specific file/folder to the stage area
-git commit -m "message you want to appear with your commit" -> sends all the files/folders that were on the stage area to the actual git repository
-git push -u origin name-of-your-branch -> sends all the committed files/folders to the GitHub repository at the wanted branch (main, other-one)
 
 #  Architectural Pattern to be used
 - Layered Architecture with MVC & Event-Driven Components
