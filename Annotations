@@ -33,6 +33,7 @@ os recursos: pagina, acao, id.
 --------------------------------------------
 
 git branch -M main -> changes the branch name from (master) to (main)
+git checkout -b name-of-new-branch -> creates a new branch  
 git checkout name-of-the-branch-you-wanna-go -> changes to the branch you want to go to
 git status -> shows the status of the files and folders on your current directory
 git init -> creates a new and empty repository based on your current folder
