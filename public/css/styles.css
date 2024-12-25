@@ -219,17 +219,17 @@ Is not being used, dont remember why i created it
 }
 
 /*======STATUS DA FERRAMENTA========*/
-.statusdasFerramentas{
+.toolsStatusContent{
   margin: 70px;  /*orientação na vertical*/
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   text-align: left;
-  color: red;
-  background-color: red;
+
 }
-.statusFerramentas{
+.toolsStatusBox{
   border-radius: 15px;
   font-family: 'Roboto', sans-serif;
+
   background-color: #047bbb;
   /*width: 400px;
   height: 300px;*/
@@ -256,13 +256,14 @@ Is not being used, dont remember why i created it
 }
 
 /*=======AVISOS=======*/
-.statusdosAvisos{
+.warningStatusContent{
   margin: 10px;  /*orientação na vertical*/
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   text-align: left;
+
 }
-.statusAvisos{
+.warningStatusBox{
   font-family: 'Roboto', sans-serif;
   border-radius: 15px;
   background-color: green;
@@ -271,9 +272,13 @@ Is not being used, dont remember why i created it
   padding: 15px;
   margin-top: 10px;
 }
+
+/* não sei o que isso está fazendo aqui */
 .Avisos{
   display: none;
 }
+
+
 /*======STATUS DO USUÁRIO========*/
 .statusdosOperadores{
   margin: 70px;  
