@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <!--========CSS===========-->
-    <link rel="stylesheet" href="../../public/css/styles.css">
+    <link rel="stylesheet" href="../../../public/css/styles.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,10 +22,13 @@
                     <!--<label for="password">Part Number:</label><br>
                     <input  id="password" name="password" required><br><br>-->
                     <br>
-                    <button id="enviar" type="submit" style="border:none; color:white; width: 90px; height: 35px;" >Enviar</button><br><br>                  
-                    <a href="Operator.html" target="_self">Escolher Ferramenta O</a><br><br>
-                    <a href="TeamLeader.html" target="_self">Escolher Ferramenta TL</a><br><br>
-                    <a href="Maintenance.html" target="_self">Escolher Ferramenta M</a><br><br>
+                    <button id="enviar" type="submit" style="border:none; color:white; width: 90px; height: 35px;" >Enviar</button><br><br>
+                    
+                    <!-- ATALHO  -->
+
+                    <a href="../Operator.html" target="_self">Escolher Ferramenta O</a><br><br>
+                    <a href="../Admin/TeamLeader.html" target="_self">Escolher Ferramenta TL</a><br><br>
+                    <a href="../Admin/Maintenance.html" target="_self">Escolher Ferramenta M</a><br><br>
                 </form>
             </div>
         </div>
@@ -93,7 +96,7 @@
             if (userOperador)
             {
             // Redirect to the second page
-            window.location.href = 'Operator.html';
+            window.location.href = '../Operator.html';
             }            
             else if (userTL)
             {

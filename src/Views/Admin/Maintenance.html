@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!------------------CSS------------------->
-  <link rel="stylesheet" href="../../public/css/styles.css">
+  <link rel="stylesheet" href="../../../public/css/styles.css">
 
   <!-------------HTML------------->
 
@@ -16,40 +16,37 @@
 
 
   <div class="containerFerramentas">
-    <div class="left-section">
-      <div class="painelF">
-        <h1>Painel de Ferramentas</h1>
-        <button id="tools" class="button" style="width: 150px; height: 50px">Escolher Ferramenta</button><br><br>
-        <button id="abrirTodas" class="button" style = "width: 150px; height: 50px">Liberar todas</button>
-        <button id="fecharTodas" class="button" style = "width: 150px; height: 50px">Fechar todas</button><br><br>
-        <div class=>
-          <button id="paquimetro" class="hidden" style="background-color: hsl(201, 97%, 77%)">Paquimetro</button><br>
-          <div class="button-container">
-            <button id="liberarPaquimetro" class="hidden" style="background-color: hsl(201, 97%, 77%)">Liberar</button><br>
-            <button id="fecharPaquimetro" class="hidden" style="background-color: hsl(201, 97%, 77%)">Fechar</button>
-          </div>
-          <br>
+    <div class="left-section">      <div class="painelF">
+      <h1>Painel de Ferramentas</h1>
+      <button id="tools" class="button" style="width: 150px; height: 50px">Escolher Ferramenta</button>
 
-          <button id="mismatch" class="hidden"style="background-color: hsl(201, 97%, 77%)">Mismatch</button><br>
-          <div class="button-container">
-            <button id="liberarMismatch" class="hidden" style="background-color: hsl(201, 97%, 77%)">Liberar</button>
-            <button id="fecharMismatch" class="hidden" style="background-color: hsl(201, 97%, 77%)">Fechar</button>
-          </div>
-          <br>
 
-          <!--<button id="fecharMismatch">Fechar</button><br>-->
-
-          <button id="centralizador"class="hidden" style="background-color: hsl(201, 97%, 77%)">Centralizador</button><br>
-          <div class="button-container">
-            <button id="liberarCentralizador" class="hidden" style="background-color: hsl(201, 97%, 77%)">Liberar</button>
-            <button id="fecharCentralizador" class="hidden" style="background-color: hsl(201, 97%, 77%)">Fechar</button><br>
-          </div>
+      <p id="tools"></p><br><br>
+      <div class=>
+        <button id="paquimetro" class="hidden" style="background-color: hsl(201, 97%, 77%)">Paquimetro</button><br>
+        <div class="button-container">
+          <button id="liberarPaquimetro" class="hidden" style="background-color: hsl(201, 97%, 77%)">Liberar</button>
+          <button id="fecharPaquimetro" class="hidden" style="background-color: hsl(201, 97%, 77%)">Fechar</button>
         </div><br>
-        <!--<button id="fecharCentralizador">Fechar</button><br>-->
-        <a href="Login.html" target="_self">
-          <button id="login">Login</button>
-        </a><br>
-      </div>
+
+        <button id="mismatch" class="hidden"style="background-color: hsl(201, 97%, 77%)">Mismatch</button><br>
+        <div class="button-container">
+          <button id="liberarMismatch" class="hidden" style="background-color: hsl(201, 97%, 77%)">Liberar</button>
+          <button id="fecharMismatch" class="hidden" style="background-color: hsl(201, 97%, 77%)">Fechar</button><br>
+        </div>
+        <!--<button id="fecharMismatch">Fechar</button><br>-->
+
+        <button id="centralizador"class="hidden" style="background-color: hsl(201, 97%, 77%)">Centralizador</button><br>
+        <div class="button-container">
+          <button id="liberarCentralizador" class="hidden" style="background-color: hsl(201, 97%, 77%)">Liberar</button><br>
+          <button id="fecharCentralizador" class="hidden" style="background-color: hsl(201, 97%, 77%)">Fechar</button><br>
+        </div>
+      </div><br>
+      <!--<button id="fecharCentralizador">Fechar</button><br>-->
+      <a href="../Static/Login.html" target="_self">
+        <button id="login">Login</button>
+      </a><br><br><br>
+    </div>
     </div>    
     <div class="right-section">
       <div class="painelO">
@@ -91,18 +88,16 @@
         </div>
         <div class="operatorsStatusBox">
           <h1 style="color: white">
-            Status dos Team Leaders
+            Status da Manutenção
           </h1>
           <div class="operatorsStatusContent">
             <p style="color: white">
-              Valdir:<br>
-              Camilo:<br>
+              Ester: <br>
             </p>
           </div>
         </div>
       </div>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </div> <!---------JAVASCRIPT--------->
   <script src="../scripts/ExComp.js"></script>
 </body>
