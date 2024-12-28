@@ -21,18 +21,18 @@ class StaticController {
 
 
             default:
-                $this->home();
+                // $this->home();
                 break;
 
        }
     }
 
-    public function home(){
-        require 'src/Views/Static/Home.html';
-    }
+    // public function home(){
+    //     require 'src/src/Views/Static/LoginDBTest.html';
+    // }
 
     public function login(){
-        require 'src/Views/Static/Login.html';
+        require 'src/Views/Static/LoginDBTest.html';
     }
 
     public function register(){

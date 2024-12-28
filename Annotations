@@ -44,3 +44,7 @@ git push -u origin name-of-your-branch -> sends all the committed files/folders 
 
 #  Architectural Pattern to be used
 - Layered Architecture with MVC & Event-Driven Components
+
+
+1. Reoganizar controllers, models e views
+2. testar o registrar e o login
