@@ -44,3 +44,6 @@ git push -u origin name-of-your-branch -> sends all the committed files/folders 
 
 #  Architectural Pattern to be used
 - Layered Architecture with MVC & Event-Driven Components
+
+
+04-01-2025 17:03 -->> adicionar pagina de cadastro com metodo post e configurar ela e o login para mandarem os dados para o banco de dados MySQL baseado no do mvc.
